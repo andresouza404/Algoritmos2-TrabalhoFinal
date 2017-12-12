@@ -27,10 +27,6 @@ public class Aluno {
 		this.city = city;
 	}
 
-	public String getId() {
-		return id;
-	}
-
 	public String getName() {
 		return name;
 	}
@@ -43,22 +39,14 @@ public class Aluno {
 		return age;
 	}
 
-	public String getGender() {
-		return gender;
-	}
-
-	public String getComp() {
-		return comp;
-	}
-
 	public String getCity() {
 		return city;
 	}
 
 	@Override
 	public String toString() {
-		return "Aluno [id=" + id + ", name=" + name + ", email=" + email + ", age=" + age + ", gender=" + gender
-				+ ", comp=" + comp + ", city=" + city + "]";
+		return "Aluno: \nid: " + id + ", name: " + name + ", email: " + email + ", age: " + age + ", gender: " + gender
+				+ ", comp: " + comp + ", city: " + city;
 	}
 
 }

@@ -69,7 +69,13 @@ public class ListaEncadeada<T> {
 	}
 	
 	public T search(T key, Comparator<T> cmp){
-		
+		ListaEncadeada<T>.Node i = head;
+		while (i != null){
+			if(cmp.compare(key, i.dado) == 0){
+				return i.dado;
+			}
+			i = i.next;
+		}
 		return null;
 	}
 	
